@@ -1,0 +1,43 @@
+package controller;
+
+import util.Teclado;
+
+public class Questao02 {
+
+	public static void main(String[] args) {
+		/*
+		 * 2) Desenvolver um programa que crie uma matriz com 3 linhas e 2 colunas.
+		 * Pergunte ao usuário números para preencher toda a matriz, e ao final exiba a
+		 * matriz inteira e também a soma dos números desta matriz.
+		 */
+
+		
+		
+		
+	int matriz[][] = new int[3][2];
+	int soma = 0;
+	
+	for (int lin = 0; lin < 3; lin++) {
+	for(int col = 0; col <2; col++) {
+		
+		matriz[lin][col] = Teclado.lerInt("informe um numero: ");
+		soma = soma + matriz[lin][col];
+		
+	}//fim do for col
+	}//fim do for lin
+		
+	for (int lin = 0; lin < 3; lin++) {
+		for(int col = 0; col <2; col++) {
+			
+		System.out.println("a matriz é: " + matriz[lin][col] + " " );
+		
+		}//fim do for col
+	System.out.println();//pular linha	
+	}//fim do for lin
+			
+		
+		System.out.println("a soma dos valores da matriz é " + soma);
+		
+	}
+
+}
